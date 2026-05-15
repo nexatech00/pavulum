@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Footer() {
   return (
     <footer className="border-t border-border/60 bg-secondary/40">
@@ -12,19 +14,19 @@ export function Footer() {
         <div>
           <div className="eyebrow mb-4">Shop</div>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="underline-grow">Books</a></li>
-            <li><a href="#" className="underline-grow">Courses</a></li>
-            <li><a href="#" className="underline-grow">Apparel</a></li>
-            <li><a href="#" className="underline-grow">Journals</a></li>
+            <li><Link href="/books" className="underline-grow">Books</Link></li>
+            <li><Link href="/courses" className="underline-grow">Courses</Link></li>
+            <li><Link href="/shop" className="underline-grow">Apparel</Link></li>
+            <li><Link href="/shop" className="underline-grow">Journals</Link></li>
           </ul>
         </div>
         <div>
           <div className="eyebrow mb-4">Studio</div>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="underline-grow">Conversations</a></li>
-            <li><a href="#" className="underline-grow">Essays</a></li>
-            <li><a href="#" className="underline-grow">Founder</a></li>
-            <li><a href="#" className="underline-grow">Contact</a></li>
+            <li><Link href="/media" className="underline-grow">Conversations</Link></li>
+            <li><Link href="/media" className="underline-grow">Essays</Link></li>
+            <li><Link href="/" className="underline-grow">Founder</Link></li>
+            <li><Link href="/" className="underline-grow">Contact</Link></li>
           </ul>
         </div>
       </div>
